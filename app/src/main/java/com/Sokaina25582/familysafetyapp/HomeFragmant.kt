@@ -38,7 +38,9 @@ class HomeFragmant : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val listMember= listOf <MemberModel> (
-
+            MemberModel("Sokaina","Lahore kahna kachaa","80%","40M"),
+            MemberModel("Shafiq","Lahore kahna kachaa","80%","40M"),
+            MemberModel("Qasim","Lahore kahna kachaa","80%","40M")
                 )
         val adapter=MemberAdapter(listMember)
         val recycler= requireView().findViewById<RecyclerView>(R.id.recycler_member)
